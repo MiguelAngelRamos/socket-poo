@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <title>Socket Cliente</title>
+</head>
+<body class="container">
+  <h1 class="mt-2">Socket Cliente</h1>
+  <hr>
+
+  <div>
+    <p>
+      Server Status:
+      <span id="socket-online" class="text-success">Online</span>
+      <span id="socket-offline" class="text-danger">Offline</span>
+
+      <div class="row">
+        <div class="col">
+          <input type="text" id="message" class="form-control">
+        </div>
+        <div class="col">
+          <button id="btn-enviar" class="btn btn-success">Enviar Message</button>
+        </div>
+      </div>
+    </p>
+  </div>
+  <script src="./socket.io/socket.io.js"></script>
+<script src="js/socket-client.js"></script>
+</body>
+</html>
